@@ -1,0 +1,18 @@
+﻿{
+  "Header": [
+    "using System;",
+    "namespace RuntimeProcessor {",
+    "class Processor {"
+  ],
+  "Body": [
+    "public Processor(){",
+    "}",
+    "public float Update(){",
+    "return 4;",
+    "}"
+  ],
+  "End": [
+    "}",
+    "}"
+  ]
+}

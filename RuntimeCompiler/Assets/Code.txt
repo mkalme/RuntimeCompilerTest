@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace RuntimeProcessor
+{
+    class Processor
+    {
+        private int Count { get; set; }
+        private Random Random {get; set;}
+
+        public Processor(){
+            Count = 0;
+            Random = new Random();
+        }
+
+        public float Update(){
+            Count += Random.Next(2) == 0 ? -1 : 1;
+
+            return (float)Count + Test();
+        }
+
+        private float Test() {
+            return (float)Math.PI;
+        }
+    }
+}
